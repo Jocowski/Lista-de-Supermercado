@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supermercado</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Lista de Supermercado</h1>
+    </header>
+
+    <div class="lista-cadastro">
+        <input class="lista-cadastro__input" type="text" placeholder="Nome do produto" name="nome_produto">
+        <input class="lista-cadastro__input" type="number" placeholder="Valor do produto" name="valor_produto">
+        <input class="lista-cadastro__botao-cadastrar" type="submit" value="Cadastrar" name="cadastrar">
+    </div>
+
+    <div class="lista-produtos">
+        
+    </div>
+
+    <div class="valor-total">
+        <p class="valor-total__texto">Total: R$0.00</p>
+    </div>
+
+    <button class="botao-limpar">Limpar</button>
+    
+    <p class="texto-remover">Para remover apenas um item, clique nele.</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

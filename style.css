@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: #1f53e4;
+    color: #ffffff;
+    padding: 1.25rem 0;
+    text-align: center;
+}
+
+.lista-cadastro {
+    display: flex;
+    margin: 1.25rem 0;
+    padding: 0 1.25rem;
+}
+
+.lista-cadastro__input {
+    flex: 1;
+    height: 2.5rem;
+    padding-left: 1.25rem;
+}
+
+.lista-cadastro__botao-cadastrar {
+    padding: 0 1.25rem;
+}
+
+.lista-produtos__produto {
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25rem 0;
+    padding: 0.625rem 1.25rem;
+}
+
+.lista-produtos__nome {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.lista-produtos__valor {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.lista-produtos__valor span {
+    background-color: #1f53e4;
+    border-radius: 10px;
+    padding: 0.5rem 0.625rem;
+}
+
+.valor-total {
+    margin: 1.25rem;
+}
+
+.valor-total__texto {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.botao-limpar {
+    margin: 0 1.25rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.texto-remover {
+    color: #666666;
+    font-size: 0.75rem;
+    margin: 0 1.25rem;
+    padding: 0.75rem 0;
+}
+
+@media screen and (max-width: 767px) {
+    .lista-cadastro {
+        flex-direction: column;
+    }
+
+    .lista-cadastro__input, .lista-cadastro__botao-cadastrar {
+        padding: 1.25rem 1.25rem;
+        width: 100%;
+    }
+
+    .botao-limpar {
+        width: 50%;
+    }
+}
